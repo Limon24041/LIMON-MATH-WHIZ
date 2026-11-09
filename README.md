@@ -102,15 +102,7 @@ The leaderboard displays the top 10 scores in descending order.
 
 The application screenshots are available in the `screenshots` directory.
 
-- Welcome Page
-- <img width="368" height="397" alt="image" src="https://github.com/user-attachments/assets/0ed63af3-95df-4319-b91a-4e0d27112ea3" />
-
-- Game Page
-- <img width="509" height="439" alt="Screenshot 2026-11-09 234853" src="https://github.com/user-attachments/assets/585e4218-652c-44b9-8d2f-e5ec4587f213" />
-
-- Result Page
-- <img width="569" height="427" alt="Screenshot 2026-11-10 004927" src="https://github.com/user-attachments/assets/69fee0d8-88e5-4ae9-a1a9-2a0c9a9a0324" />
-
 - Leaderboard Page
-- ![Uploading Screenshot 2026-11-10 010358.png…]()
+- <img width="848" height="446" alt="Screenshot 2026-11-10 010358" src="https://github.com/user-attachments/assets/30df1058-100f-4312-ae53-8de8811512ee" />
+
 
