@@ -1,0 +1,365 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+    min-height: 100vh;
+    color: white;
+}
+
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 45px 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 35px rgba(139, 92, 246, 0.25);
+    backdrop-filter: blur(12px);
+}
+
+.math-icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #c4b5fd;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #6366f1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 22px;
+}
+
+input::placeholder {
+    color: #cbd5e1;
+}
+
+input:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 12px rgba(167, 139, 250, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+.difficulty {
+    margin-top: 28px;
+    color: #a5b4fc;
+}
+
+.footer {
+    margin-top: 12px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* ============================= */
+/* GAME PAGE */
+/* ============================= */
+
+.game-container,
+.result-container,
+.leaderboard-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.game-card,
+.result-card,
+.leaderboard-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+.game-card h1,
+.result-card h1,
+.leaderboard-card h1 {
+    text-align: center;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+    padding: 15px;
+    background: rgba(99, 102, 241, 0.15);
+    border-radius: 10px;
+    color: #c4b5fd;
+}
+
+.game-card h2,
+.result-card h2 {
+    margin: 25px 0 15px;
+    color: #c4b5fd;
+}
+
+.question-box {
+    position: relative;
+    margin: 18px 0;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    border-radius: 12px;
+}
+
+.question-box h3 {
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+.question-box p {
+    margin-bottom: 15px;
+    color: #e2e8f0;
+}
+
+.question-box input {
+    margin-bottom: 5px;
+}
+
+.marks {
+    display: block;
+    color: #fbbf24;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* RESULT PAGE */
+/* ============================= */
+
+.result-card {
+    max-width: 650px;
+    text-align: center;
+}
+
+.score-circle {
+    width: 180px;
+    height: 180px;
+    margin: 25px auto;
+    border: 5px solid #a78bfa;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(167, 139, 250, 0.4);
+}
+
+.score-circle h2 {
+    font-size: 42px;
+    margin: 0;
+    color: #c4b5fd;
+}
+
+.score-circle p {
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+.answer-summary {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.answer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+}
+
+.correct {
+    color: #4ade80;
+}
+
+.incorrect {
+    color: #f87171;
+}
+
+.success-message {
+    color: #4ade80;
+    margin: 20px 0;
+}
+
+.error-message {
+    color: #f87171;
+    margin: 20px 0;
+}
+
+.action-button,
+.secondary-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    transition: 0.3s;
+}
+
+.secondary-button {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid #a78bfa;
+}
+
+.action-button:hover,
+.secondary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.5);
+}
+
+/* ============================= */
+/* LEADERBOARD PAGE */
+/* ============================= */
+
+.leaderboard-card {
+    max-width: 1100px;
+    text-align: center;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 15px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+}
+
+th {
+    background: rgba(124, 58, 237, 0.35);
+    color: #ddd6fe;
+}
+
+td {
+    color: #e2e8f0;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.score-value {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.empty-message {
+    margin: 30px 0;
+    color: #cbd5e1;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .game-card,
+    .result-card,
+    .leaderboard-card {
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .game-info {
+        flex-direction: column;
+    }
+
+    .score-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .score-circle h2 {
+        font-size: 35px;
+    }
+}
